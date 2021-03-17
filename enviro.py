@@ -110,9 +110,9 @@ while True:
         draw.text((x, y), CO2, font=font, fill="#FFFFFF")
 
         try:
-            publish.single("chambre/temperature", temperature, hostname="10.201.66.80")
-            publish.single("chambre/humidity", round(scd.relative_humidity,1), hostname="10.201.66.80")
-            publish.single("chambre/co2", round(scd.CO2,0), hostname="10.201.66.80")
+            publish.single("chambre/temperature", temperature, hostname="xxx.xxx.xxx.xxx")
+            publish.single("chambre/humidity", round(scd.relative_humidity,1), hostname="xxx.xxx.xxx.xxx")
+            publish.single("chambre/co2", round(scd.CO2,0), hostname="xxx.xxx.xxx.xxx")
         except:
             pass
 
